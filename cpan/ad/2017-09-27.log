@@ -1,0 +1,49 @@
+
+
+--- 02:01:59.979005------(CUSTOMNEWS) SIZE FILTER PHASE
+Min size : 1024x720
+
+--- 02:03:18.194106------(CUSTOMNEWS) SIZE FILTER PHASE
+Min size : 1024x720
+
+--- 02:07:12.813577------(CUSTOMNEWS) SIZE FILTER PHASE
+Min size : 1024x720
+
+--- 21:11:27.779007------(CUSTOMNEWS) SIZE FILTER PHASE
+Mistaken invocation
+
+--- 21:11:35.248705------(CUSTOMNEWS) SIZE FILTER PHASE
+INP temp.xml : Min size : 1024x720<item><title>title</title><desc>desc</desc><source>source</source><img_link>../res/custom/27-09-2017_idea8.jpg</img_link></item>
+
+--- 21:12:17.013266------(CUSTOMNEWS) SIZE FILTER PHASE
+INP temp.xml : Min size : 1024x720<item><title>title</title><desc>desc</desc><source>source</source><img_link>../res/custom/27-09-2017_idea8.jpg</img_link></item>img element : ../res/custom/27-09-2017_idea8.jpgimg element : ../res/custom/27-09-2017_idea8.jpg
+
+--- 21:16:20.576649------(CUSTOMNEWS) SIZE FILTER PHASE
+INP temp.xml : Min size : 1024x720<item><title>title</title><desc>desc</desc><source>source</source><img_link>../res/custom/27-09-2017_idea8.jpg</img_link></item>
+img element : ../res/custom/27-09-2017_idea8.jpg
+img element : ../res/custom/27-09-2017_idea8.jpg
+image was not up to specs
+
+--- 21:18:30.917662------(CUSTOMNEWS) SIZE FILTER PHASE
+INP ./temp.xml : Min size : 1024x720<item><title>title</title><desc>desc</desc><source>source</source><img_link>../res/custom/27-09-2017_idea8.jpg</img_link></item>
+img element : ../res/custom/27-09-2017_idea8.jpg
+img element : ../res/custom/27-09-2017_idea8.jpg
+image was not up to specs
+
+--- 21:24:22.099813------(CUSTOMNEWS) SIZE FILTER PHASE
+INP ./temp.xml : Min size : 1024x720<item><title>title</title><desc>desc</desc><source>source</source><img_link>../res/custom/27-09-2017_idea8.jpg</img_link></item>
+img element : ../res/custom/27-09-2017_idea8.jpg
+img element : ../res/custom/27-09-2017_idea8.jpg
+image was not up to specs
+
+--- 21:34:26.452089------(CUSTOMNEWS) SIZE FILTER PHASE
+INP ./temp.xml : Min size : 1024x720<item><title>title</title><desc>desc</desc><source>source</source><img_link>../res/custom/27-09-2017_idea8.jpg</img_link></item>
+img element : ../res/custom/27-09-2017_idea8.jpg
+img element : ../res/custom/27-09-2017_idea8.jpg
+image was not up to specs
+
+--- 21:46:22.787384------(CUSTOMNEWS) SIZE FILTER PHASE
+INP ./temp.xml : Min size : 1024x720<item><title>title</title><desc>desc</desc><source>source</source><img_link>../res/custom/27-09-2017_idea8.jpg</img_link></item>
+img element : ../res/custom/27-09-2017_idea8.jpg
+img element : ../res/custom/27-09-2017_idea8.jpg
+image was not up to specs

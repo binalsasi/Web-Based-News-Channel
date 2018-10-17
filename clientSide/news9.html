@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!--
+	Developer : Binal S, binalsasi@gmail.com
+-->
+<html>
+<head>
+<title>Four</title>
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="news9.css"/>
+<script>
+var lc = 0;
+var newDataAvailable = false;
+var tickerAnimationState = "animation-play-state";
+
+var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+var cnshowing = true, fshowing = false;
+var startedDisplaying = false;
+var startedDisplayingCN = false;
+
+var tempTitles, tempDescs, tempSources, tempImg_links, tempImgs, tempLength;
+var titles=[], descs=[], sources=[], img_links=[], imgs = [], length;
+var imgstring;
+var prevIndex = 0;
+var index = 0;
+var bindex = 0;
+var imgLoadCount = 0;
+
+var ffeed = false, fbn = false, fst = false;
+var date, time;
+
+var scrolltext;
+var bns, bnlength = 0;
+
+var title, title_bg, title_ul, desc, desc_bg, imgList, source, bntitle;
+var feed_area;
+var okay = true;
+var ticker_bg, ticker, indent;
+var bn_bg, bn, bn_bg_width;
+var lrunning = true;
+
+function makeTimeString(hours, mins){
+	am = hours > 12 ? "PM" : "AM";
+	hours = hours > 12 ? hours - 12: hours;
+	hh = hours<10 ? "0" + hours : hours;
+	mm = mins<10 ? "0" + mins : mins;
+
+	return hh + " : " + mm + " " + am;
+}
+function makeDateString(today){
+	dt = today.getDate();
+	mm = today.getMonth();
+	if(dt % 10 == 1)
+		th = dt == 11 ? "th" : "st";
+	else if(dt % 10 == 2)
+		th = dt == 12 ? "th" : "nd";
+	else if(dt % 10 == 3)
+		th = dt == 13 ? "th" : "rd";
+	else
+		th = "th";
+	return dt + th + " " + months[mm];
+}
+
+function show(){
+	console.log("show()> show() called. showing feeds #"+index + " ["+ (lc++) +"]");
+	fshowing = false;
+	feed_area.css({'opacity' : 0 });
+	feed_area.one("transitionend", function(){
+			if(newDataAvailable){
+				console.log("show()> new data available; tempLength = " + tempLength + " ["+ (lc++) +"]");
+				titles=[];
+				descs=[];
+				sources=[];
+				img_links=[];
+				imgs=[];
+				length = 0;
+
+				imgList.html(imgstring);
+	
+				titles = tempTitles;
+				descs = tempDescs;
+				sources = tempSources;
+				img_links = tempImg_links;
+				imgs = tempImgs;
+				length = tempLength;
+	
+				tempTitles=[];
+				tempDescs=[];
+				tempSources=[];
+				tempImg_links=[];
+				tempImgs=[];
+				tempLength = 0;
+	
+				index = 0;
+				console.log("show()> new data set; length = " + length + " ["+ (lc++) +"]");
+				newDataAvailable = false;
+				
+			}
+
+			console.log("show()> feed_area opacity set to 0" + " ["+ (lc++) +"]");
+		
+			console.log("show()> starting replacing operations; index" + index + " ["+ (lc++) +"]");
+//			img.attr('src', imgs[index]);
+			$("#img_"+prevIndex).css({'opacity' : 0});
+			$("#img_"+index).css({'opacity' : 1});
+
+			title.html(titles[index].childNodes[0].nodeValue);
+			desc.html(descs[index].childNodes[0].nodeValue);
+			source.html(sources[index].childNodes[0].nodeValue);
+			tcolor = img_links[index].getAttribute("textColor");
+			invColor = tcolor == "white" ? 0:255;
+			if(invColor == 0){
+				//set whole bg a black tint
+				title_bg.css({'background':"-webkit-linear-gradient(right, rgba(0,0,0,0.2), rgba(0,0,0,0.7))", 'text-shadow' : "-1px -1px 0px #000, 1px -1px 0px #000, 1px 1px 0px #000, -1px 1px 0px #000"});
+				desc_bg.css({'background':"-webkit-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.4))", 'text-shadow' : "-1px -1px 0px #000, 1px -1px 0px #000, 1px 1px 0px #000, -1px 1px 0px #000"});
+				source.css({'background':"-webkit-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.4))", 'text-shadow' : "-1px -1px 0px #000, 1px -1px 0px #000, 1px 1px 0px #000, -1px 1px 0px #000"});
+				title_ul.css({'background':"-webkit-linear-gradient(right, rgba(0,0,0,0.2), rgba(0,0,0,0.8))"});
+//give under line a fading white
+			}
+			else{
+				title_bg.css({'background':"-webkit-linear-gradient(right, rgba(255,255,255,0.2), rgba(255,255,255,0.7))", 'text-shadow' : "-1px -1px 0px #fff, 1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff"});
+				desc_bg.css({'background':"-webkit-linear-gradient(bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.4))", 'text-shadow' : "-1px -1px 0px #fff, 1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff"});
+				source.css({'background':"-webkit-linear-gradient(bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.4))", 'text-shadow' : "-1px -1px 0px #fff, 1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff"});
+				title_ul.css({'background':"-webkit-linear-gradient(right, rgba(255,255,255,0.2), rgba(255,255,255,0.8))"});
+				//set whole bg a black tint
+			}
+			title.css({'color' : tcolor});
+			desc.css({'color': tcolor, 'text-shadow': "0px 0px 2px rgba("+invColor+","+invColor+","+invColor+",0.5)"});
+			source.css({'color': tcolor, 'text-shadow': "0px 0px 2px rgba("+invColor+","+invColor+","+invColor+",0.5)"});
+				console.log("show()> replacement operations completed and scheduled opacity increase 2sec" + " ["+ (lc++) +"]");
+
+				feed_area.css({'opacity' : 1});
+				feed_area.one("transitionend", function(){
+					fshowing = true;
+					console.log("show()> show() done" + " ["+ (lc++) +"]");
+					prevIndex = index;
+					if(++index == length)
+						index = 0;
+				});
+		});
+
+}
+
+function showBn(){
+	console.log("showBn()> called " + bindex + " ["+ (lc++) +"]");
+
+	if(fshowing){
+		if(bindex == 0)
+			bntitle.animate({'margin-left':-bn_bg_width},'fast');
+		if(bindex == bnlength){
+			bn.animate({'margin-left': bn_bg_width}, function(){
+				console.log("showBn()> moved out - right" + " ["+ (lc++) +"]");
+				bntitle.animate({'margin-left': '30px'}, function(){
+					console.log("showBn()> animated back in" + " ["+ (lc++) +"]");
+					bindex = 0;
+
+					if(newBNavailable){
+						console.log("showBn()> new data available" + " ["+ (lc++) +"]");
+						bns = [];
+						bnlength = 0;
+
+						bns = tempBns;
+						bnlength = tempBnlength;
+
+						tempBns = [];
+						tempBnlength = 0;
+
+						newBNavailable = false;
+						console.log("showBn()> new data set" + " ["+ (lc++) +"]");
+					}
+				});
+			});
+		}
+		else{
+			console.log("showBn()> feed is visible. animating CN" + " ["+ (lc++) +"]");
+			bn.animate({'margin-left': bn_bg_width}, function(){
+				console.log("showBn()> moved out - right" + " ["+ (lc++) +"]");
+				bn.css({'margin-left' : -bn_bg_width});
+				bn.text(bns[bindex].childNodes[0].nodeValue);
+				bn.animate({'margin-left': '30px'}, function(){
+					console.log("showBn()> animated back in" + " ["+ (lc++) +"]");
+					++bindex;
+			//		if(++bindex == bnlength)
+			//			bindex = 0;
+				});
+			});
+		}
+	}
+}
+
+function checkForFeedData(){
+
+	$.ajax({
+		async: true,
+		cache: false,
+		ifModified: true,
+		error: function(xhr){
+			console.log("checkForFeedData()> an error occured while fetching feeds : " + xhr.status + " " + xhr.statusText + " ["+ (lc++) +"]");
+		},
+		success: function(result){
+			console.log("checkForFeedData()> feeds.xml fetch success : " + result + " ["+ (lc++) +"]");
+			tempImgs = [];
+			tempTitles = result.getElementsByTagName("title");
+			tempSources = result.getElementsByTagName("source");
+			tempDescs = result.getElementsByTagName("desc");
+			tempImg_links = result.getElementsByTagName("img_link");
+			tempLength = tempTitles.length;
+
+			imgstring = "";
+			for(z = 0; z < tempLength; ++z){
+				imgstring += "<img id='img_"+z+"' class='feed_img' src='"+tempImg_links[z].childNodes[0].nodeValue +"'/>";
+			}
+
+			newDataAvailable = true;
+
+			if(lrunning){
+				loading.fadeOut();
+				lrunning = false;
+			}
+
+			if(!startedDisplaying){
+				$("#fault").css('display', 'none');
+				console.log("checkForFeedData()> feed complete; feed display is started; show every 15s" + " ["+ (lc++) +"]");
+				setInterval(function(){
+					show();
+				}, 15000);
+				startedDisplaying = true;
+			}
+			console.log("checkForFeedData()> Fetching Images completed" + " ["+ (lc++) +"]");
+			console.log("checkForFeedData()> Feed Completely fetched" + " ["+ (lc++) +"]");
+		},
+		timeout: 10000,
+		type: "GET",
+		url: "../skimmed/feeds.xml"
+	});
+
+}
+
+function checkForScrollData(){
+	$.ajax({
+		async: true,
+		cache: false,
+		ifModified: true,
+		error: function(xhr){
+		console.log("checkForScrollData()> scrollfetch > an error occured while fetching scrolltext : " + xhr.status + " " + xhr.statusText + " ["+ (lc++) +"]");
+		},
+		success: function(result){
+			console.log("checkForScrollData()> scrollfetch > success : scrolltext" + " ["+ (lc++) +"]");
+			ticker_bg.css('opacity', 0);
+			ticker_bg.one("transitionend", function() {
+				console.log("checkForScrollData()> scrollfetch > ticker_bg opacity 0; num sct = " + result.length + " ["+ (lc++) +"]");
+				scrolltext = result;
+				ticker.html(scrolltext);
+				ticker.css({'transform':"translateX(10%)", "animation-play-state":"running", "animation": "marquee-left "+result.length/10+"s linear infinite"});
+				ticker_bg.css('opacity', 1);
+			});
+		},
+		timeout: 10000,
+		type: "GET",
+		url: "../skimmed/scrolltext.txt"
+	});
+
+}
+
+function checkForCNData(){
+	$.ajax({
+		async: true,
+		cache: false,
+		ifModified: true,
+		error: function(xhr){
+			console.log("checkForCNData()> cnlist fetch > an error occured while fetching breaking news : " + xhr.status + " " + xhr.statusText + " ["+ (lc++) +"]");
+		},
+		success: function(result){
+			console.log("checkForCNData()> cnlist fetch > cnlist success : " + result + " ["+ (lc++) +"]");
+		
+			tempBns = result.getElementsByTagName("cnitem");
+			tempBnlength = tempBns.length;
+			newBNavailable = true;
+			if(!startedDisplayingCN){
+
+				bns = [];
+				bnlength = 0;
+
+				bns = tempBns;
+				bnlength = tempBnlength;
+
+				tempBns = [];
+				tempBnlength = 0;
+
+				newBNavailable = false;
+
+				console.log("checkForCNData()> cnlist fetch > started displaying CN" + " ["+ (lc++) +"]");
+				setTimeout(function(){
+					bn_bg.animate({'opacity':1}, 'slow', function(){
+						console.log("checkForCNData()> cnlist fetch > bn bg visible; started sequence; length = " + tempBnlength + " ["+ (lc++) +"]");
+						setInterval(function(){
+							console.log("checkForCNData()> cnlist show cusat news" + bnlength + " ["+ (lc++) +"]");
+							showBn();
+						}, 6000);
+					});
+				}, 5000);
+				startedDisplayingCN = true;
+			}
+		},
+		timeout: 10000,
+		type: "GET",
+		url: "../skimmed/cnlist.xml"
+	});
+
+}
+
+$(function(){
+	console.log("window > loaded completely" + " ["+ (lc++) +"]");
+
+	date = $("#date");
+	time = $("#time");
+	feed_area = $("#feed_area");
+	title = $("#feed_title");
+	title_bg = $("#feed_title_container");
+	title_ul = $("#feed_title_underline");
+	desc = $("#feed_desc");
+	desc_bg = $("#feed_desc_container");
+	ticker_bg = $("#ticker_container");
+	ticker = $("#ticker");
+	imgList = $("#feed_img_list");
+	bn_bg = $("#bn_container");
+	bn_bg_width = bn_bg.outerWidth();
+	bn = $("#bn_content");
+	source = $("#feed_source");
+	bntitle = $("#breaking_news");
+
+	loading = $("#loading");
+
+	console.log("window > initialization of objects completed" + " ["+ (lc++) +"]");
+
+	console.log("animation > asd " + ticker.css(tickerAnimationState));
+
+	var today = new Date();
+	var hours = today.getHours();
+	var minutes = today.getMinutes();
+	date.text(makeDateString(today));
+	date.animate({'opacity':1});
+	time.text(makeTimeString(hours, minutes));
+	setTimeout(function(){time.animate({'opacity':1});}, 400);
+	function updateAndSetTime(){
+		++minutes;
+		if(minutes == 60){
+			minutes = 0;
+			++hours;
+			if(hours == 24){
+				hours = 0;
+				today = new Date();
+				date.text(makeDateString(today));
+			}
+		}
+		time.text(makeTimeString(hours, minutes));
+	}
+	
+	var delay = 60 - new Date().getSeconds();
+	setTimeout(function(){ updateAndSetTime();setInterval(updateAndSetTime, 58500); }, delay*1000);
+
+	console.log("window > date time set" + " ["+ (lc++) +"]");
+	console.log("window > checking for new data" + " ["+ (lc++) +"]");
+
+	loading.animate({'opacity' : 1}, function(){
+		loading.css("animation", "spin 2s linear infinite");
+	});
+
+	checkForFeedData();
+	checkForScrollData();
+	checkForCNData();
+
+	setInterval(checkForFeedData, 3600005);
+	setInterval(checkForScrollData, 3600000);
+	setInterval(checkForCNData, 600000);
+
+
+	setTimeout(function(){
+		if(lrunning){
+				loading.fadeOut();
+				lrunning = false;
+				$("#fault").css('display', "block");
+		}
+	},30000);
+});
+</script>
+</head>
+<body>
+	<img id="main_bg" src="001.png"/>
+	<div id="fault"></div>
+	<img id="loading" src="loading.png"/>
+	<div id="main_area">
+
+		<div id="feed_area">
+			<div id="feed_img_list"></div>
+			<div id="feed_content_area">
+				<div id="feed_title_container">
+					<div id="feed_title"></div>
+				</div>
+				<div id="feed_title_underline"></div>
+				<div id="source_desc_container">
+					<div id="feed_source"></div>
+					<div id="feed_desc_container">
+						<div id="feed_desc"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div id="bn_container">
+				<div id="breaking_news">Cusat News</div>
+				<div id="bn_content"></div>
+				<div id="bn_content2"></div>
+			</div>
+			<div id="date"></div>
+			<div id="time"></div>
+			<div id="ticker_container">
+				<div id="ticker"></div>
+			</div>
+	</div>
+	<div id="developer">powered by ACES</div>
+	<div id="beta_tag">beta</div>
+</body>
+</html>

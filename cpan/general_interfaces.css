@@ -1,0 +1,116 @@
+#main{
+	position:absolute;
+	top:65px;
+	margin: 20px;
+	width:90%;
+}
+
+#list{
+	height : 450px;
+	width: 100%;
+	overflow: auto;
+	margin-top:20px;
+}
+#listcontainer{
+	border: 1px solid black;
+}
+
+#active_tab, #all_feeds_tab{
+	float:left;
+	text-align:center;
+	width: calc(50% - 40px);
+	padding:20px;
+	background-color:gray;
+}
+#active_tab {
+	background-color: #ccc;
+	box-shadow:20px -2px 2px black;
+}
+.detail_div{
+	float:left;
+	max-width: 80%;
+}
+.listitem_controls{
+	float:right;
+}
+.listitem_active,.listitem_blocked{
+	overflow: auto;
+	margin-top:5px;
+	padding: 15px;
+}
+.listitem_active{
+	background-color: rgba(0, 255, 0, 0.25);
+}
+.listitem_blocked{
+	background-color: rgba(35,35,35,0.25);
+}
+.listitem_text{
+	float:left;
+	max-width: 80%;
+}
+.status_div_active, .status_div_blocked{
+	float:right;
+	margin-left:50px;
+}
+.status_div_active{
+	color:green;
+}
+.status_div_blocked{
+	color:gray;
+}
+input.multiple_selection{
+	float:left;
+	display:none;
+}
+div.popup{
+	position:absolute;
+	top:40%;
+	left:30%;
+	display:none;
+	background-color: white;
+	//border: 2px solid black;
+	//border-radius: 4px;
+	box-shadow: 3px 3px 8px black;
+}
+#infobox_title{
+	background-color: #6d4c41;
+	padding:15px;
+	color:white;
+}
+#info_text{
+	padding: 20px;
+}
+#close_info{
+	margin-top:20px;
+	float:right;
+	padding:3px;
+	margin:5px;
+}
+#inputbox{
+	display:none;
+	padding:0px;
+}
+#inputbox_title{
+	background-color: #6d4c41;
+	padding:10px;
+	color:white;
+}
+#inputbox_body{
+	padding:20px;
+}
+#inputbox_inputarea input{
+	padding:5px;
+}
+#inputbox_buttonarea{
+	padding: 5px;
+	overflow: auto;
+	background-color: #efebe9;
+}
+#inputbox_positive, #inputbox_negative{
+	float:left;
+	padding:2px;
+	width:50%;
+}
+
+
+

@@ -1,0 +1,245 @@
+<root>
+<item status='active' id='0'>
+<desc>Protecting vulnerable connected Linux-based devices from online attacks&#8212;especially those used in healthcare settings&#8212;requires a multifaceted monitoring, assessment, notification, and remediation process.</desc>
+<title>Four steps to secure Linux-based systems</title>
+<link>http://spectrum.ieee.org/whitepaper/four-steps-to-secure-linux-based-systems</link>
+<pubdate>Wed, 19 Jul 2017 12:30:00 GMT</pubdate>
+<source>ieee_spectrum_computing</source>
+<img_link dominantColor="23.3164689429,24.7761429398,30.264142554" textColor="white">../res/generic/2.jpg</img_link>
+</item>
+<item status='active' id='1'>
+<img_link dominantColor="97.5854414062,91.9158489583,95.8287430556" textColor="white">../res/generic/1.jpg</img_link>
+<desc>Find the programming languages that are most important to you</desc>
+<title>Interactive: The Top Programming Languages 2017</title>
+<link>http://spectrum.ieee.org/static/interactive-the-top-programming-languages-2017</link>
+<pubdate>Tue, 18 Jul 2017 19:00:00 GMT</pubdate>
+<source>ieee_spectrum_computing</source>
+</item>
+<item status='active' id='2'>
+<img_link dominantColor="179.440999891,161.750857747,139.613696832" textColor="black">../res/generic/3.jpg</img_link>
+<desc>Python jumps to No. 1, and Swift enters the Top Ten</desc>
+<title>The 2017 Top Programming Languages</title>
+<link>http://spectrum.ieee.org/computing/software/the-2017-top-programming-languages</link>
+<pubdate>Tue, 18 Jul 2017 19:00:00 GMT</pubdate>
+<source>ieee_spectrum_computing</source>
+</item>
+<item status='active' id='3'>
+<img_link dominantColor="23.3164689429,24.7761429398,30.264142554" textColor="white">../res/generic/2.jpg</img_link>
+<desc>We analyze the languages that are in demand by employers</desc>
+<title>Top Programming Languages 2017: Focus on Jobs</title>
+<link>http://spectrum.ieee.org/computing/software/top-programming-languages-2017-focus-on-jobs</link>
+<pubdate>Tue, 18 Jul 2017 19:00:00 GMT</pubdate>
+<source>ieee_spectrum_computing</source>
+</item>
+<item status='active' id='4'>
+<img_link dominantColor="52.5222013889,103.527256944,124.31783724" textColor="white">../res/generic/4.jpg</img_link>
+<desc>Singapore entrepreneurs say being able to avoid NSA requirements give their companies a big advantage</desc>
+<title>Doing a Startup Involving Cryptography? Get Out of the U.S.</title>
+<link>http://spectrum.ieee.org/view-from-the-valley/at-work/start-ups/doing-a-startup-involving-cryptography-get-out-of-the-us</link>
+<pubdate>Tue, 18 Jul 2017 17:47:00 GMT</pubdate>
+<source>ieee_spectrum_computing</source>
+</item>
+<item status='active' id='5'>
+<desc>Here&#8217;s a look at how SPARKL is seamlessly integrating legacy platforms with blockchain technology.</desc>
+<title>Beyond Bitcoin: How Blockchains Secure the IoT</title>
+<link>http://spectrum.ieee.org/whitepaper/beyond-bitcoin-how-blockchains-secure-the-iot</link>
+<pubdate>Tue, 18 Jul 2017 12:30:00 GMT</pubdate>
+<source>ieee_spectrum_computing</source>
+<img_link dominantColor="52.5222013889,103.527256944,124.31783724" textColor="white">../res/generic/4.jpg</img_link>
+</item>
+<item status='active' id='6'>
+<img_link dominantColor="134.586093023,149.654994749,155.642256189" textColor="black">../res/generic/0.jpg</img_link>
+<desc>Smart glove features rubbery sensors, costs less than US $100, and converts sign language into text</desc>
+<title>Low-Cost Pliable Materials Transform Glove Into Sign-to-Text Machine</title>
+<link>http://spectrum.ieee.org/the-human-os/computing/hardware/low-cost-pliable-materials-transform-glove-into-sign-to-text-machine</link>
+<pubdate>Mon, 17 Jul 2017 14:00:00 GMT</pubdate>
+<source>ieee_spectrum_computing</source>
+</item>
+<item status='active' id='7'>
+<img_link dominantColor="179.440999891,161.750857747,139.613696832" textColor="black">../res/generic/3.jpg</img_link>
+<desc>Blind quantum computing in the cloud could keep computation results secret even for remote classical computer users</desc>
+<title>Even Ordinary Computer Users Could Access Secret Quantum Computing</title>
+<link>http://spectrum.ieee.org/tech-talk/computing/software/even-ordinary-computer-users-could-access-secret-quantum-computing</link>
+<pubdate>Fri, 14 Jul 2017 14:00:00 GMT</pubdate>
+<source>ieee_spectrum_computing</source>
+</item>
+<item status='active' id='8'>
+<img_link dominantColor="23.3164689429,24.7761429398,30.264142554" textColor="white">../res/generic/2.jpg</img_link>
+<desc>Personalized learning has to get social. Students learn better through conversation</desc>
+<title>In FutureLearn's MOOCs, Conversation Powers Learning at Massive Scale</title>
+<link>http://spectrum.ieee.org/tech-talk/at-work/education/conversation-powers-personalized-learning-in-futurelearn-mooc</link>
+<pubdate>Mon, 10 Jul 2017 12:00:00 GMT</pubdate>
+<source>ieee_spectrum_computing</source>
+</item>
+<item status='active' id='9'>
+<img_link dominantColor="52.5222013889,103.527256944,124.31783724" textColor="white">../res/generic/4.jpg</img_link>
+<desc>Social and computer scientists parse online bot discourse</desc>
+<title>How Bots Win Friends and Influence People</title>
+<link>http://spectrum.ieee.org/tech-talk/telecom/security/how-bots-win-friends-and-influence-people</link>
+<pubdate>Thu, 6 Jul 2017 13:30:00 GMT</pubdate>
+<source>ieee_spectrum_computing</source>
+</item>
+<item status='active' id='10'>
+<img_link dominantColor="58.5121313477,51.4479226345,38.5517860243" textColor="white">../res/images/techcrunch_android_screenshot_20170718-102136.png</img_link>
+<desc>Adobe launched an update for its Lightroom photo management and editing apps on iOS and Android today. The iOS app for iPhone and iPad is getting a few new features, including support for Adobe&amp;#8217;s selective brush, a new details tab and an interface update for the iPad version. That&amp;#8217;s all pretty nice, but the biggest news here is that Adobe also completely redesigned the Android app&amp;hellip; </desc>
+<title>Adobe launches redesigned Lightroom for Android</title>
+<link>http://feedproxy.google.com/~r/techcrunch/android/~3/goUkX14MBfU/</link>
+<pubdate>Tue, 18 Jul 2017 17:43:54 +0000</pubdate>
+<source>techcrunch_android</source>
+</item>
+<item status='active' id='11'>
+<img_link dominantColor="84.0955094581,147.406158521,210.09565341" textColor="black">../res/images/techcrunch_android_triangle.jpg</img_link>
+<desc>Google recently began testing a new tool for helping people better manage the mobile data used by their smartphones. The new Android app, called Triangle, is currently being tested in the Philippines, and lets you do things like view your data balance, see which apps are accounting for the most data usage and even block individual applications from using your mobile data. </desc>
+<title>Google&#8217;s new experiment, Triangle, lets you block individual apps from using mobile data</title>
+<link>http://feedproxy.google.com/~r/techcrunch/android/~3/Ddzx7S8WtSQ/</link>
+<pubdate>Thu, 29 Jun 2017 15:16:14 +0000</pubdate>
+<source>techcrunch_android</source>
+</item>
+<item status='active' id='12'>
+<img_link dominantColor="56.7215552532,110.168985639,146.43074709" textColor="white">../res/images/techcrunch_android_android-pay.jpg</img_link>
+<desc>Android Pay launched at the end of May in Canada, but at the time American Express was listed as &amp;#8220;coming later this summer&amp;#8221; in terms of support. AmEx users didn&amp;#8217;t have to wait long, it turns out, because support just went live for their credit cards in Android&amp;#8217;s mobile payments platform in the country.
+AmEx&#160;joins a decent list of major Canadian banks, as well as&amp;#8230; </desc>
+<title>Android Pay adds support for American Express in Canada</title>
+<link>http://feedproxy.google.com/~r/techcrunch/android/~3/VzsoQt5pnPA/</link>
+<pubdate>Wed, 28 Jun 2017 14:25:21 +0000</pubdate>
+<source>techcrunch_android</source>
+</item>
+<item status='active' id='13'>
+<img_link dominantColor="134.321732053,116.207002537,129.221269731" textColor="white">../res/images/techcrunch_android_img_3778.jpg</img_link>
+<desc>Late last year, Firefox introduced a new, private web browser for iPhone, called Firefox Focus. The browser by default blocks ad trackers and can erase your browsing history, including passwords and cookies. Now, over a half-year later, Firefox is bringing the Focus browser to Android devices, with some added functionality.
+Like the iOS version, Firefox Focus remains a minimalistic browser&amp;#8230; </desc>
+<title>Mozilla brings its private web browser Firefox Focus to Android</title>
+<link>http://feedproxy.google.com/~r/techcrunch/android/~3/W771PEWyv58/</link>
+<pubdate>Tue, 20 Jun 2017 13:00:37 +0000</pubdate>
+<source>techcrunch_android</source>
+</item>
+<item status='active' id='14'>
+<img_link dominantColor="78.6229004161,152.919324435,115.527021532" textColor="white">../res/images/techcrunch_android_android-excellence.png</img_link>
+<desc>At WWDC this month, Apple introduced an entirely revamped App Store that puts a much greater focus on editorial, with plans for stories about the apps, how to&amp;#8217;s, interviews, and more, in addition to regular postings of curated lists and &amp;#8220;app of the day&amp;#8221; type features. Today, Google announced its own plans to expand editorial involvement on Google Play, with the launch of its&amp;hellip; </desc>
+<title>Google Play introduces &#8216;Android Excellence&#8217; collections that showcase editorially selected top apps and games</title>
+<link>http://feedproxy.google.com/~r/techcrunch/android/~3/902HzYjogyM/</link>
+<pubdate>Tue, 13 Jun 2017 16:53:07 +0000</pubdate>
+<source>techcrunch_android</source>
+</item>
+<item status='active' id='15'>
+<img_link dominantColor="82.7436268667,85.647385325,81.748677029" textColor="white">../res/images/techcrunch_android_android-pay-canada.jpg</img_link>
+<desc>Android Pay launched in Canada on Wednesday, with support for a number of major banks at launch, and additional banks to be added soon. The Android Pay debut in Canada was teased at Google&amp;#8217;s I/O developer conference keynote earlier this month, and reported as imminent last week by MobileSyrup. The launch today includes support for Visa and MasterCard credit, as well as Interac debit&amp;hellip; </desc>
+<title>Android Pay expands to Canada</title>
+<link>http://feedproxy.google.com/~r/techcrunch/android/~3/k_lbovOBgS0/</link>
+<pubdate>Wed, 31 May 2017 17:00:18 +0000</pubdate>
+<source>techcrunch_android</source>
+</item>
+<item status='active' id='16'>
+<img_link dominantColor="45.2628406401,44.5498102275,44.5588976808" textColor="white">../res/images/techcrunch_android_screenshot-2017-05-30-18-49-18.png</img_link>
+<desc>There&amp;#8217;s been much speculation around the new project from Andy Rubin, the man responsible for developing Android, and now we have the answer. Well, part of the answer, at least.
+Essential, Rubin&amp;#8217;s new company, unveiled its first smartphone alongside an Amazon Echo-like device and a new operating system called &amp;#8220;Ambient&amp;#8221;. The three were revealed&#160;online, but all&amp;#8230; </desc>
+<title>Android creator Andy Rubin&#8217;s Essential Phone looks stunning and will cost $699</title>
+<link>http://feedproxy.google.com/~r/techcrunch/android/~3/ERxef9WoIMY/</link>
+<pubdate>Tue, 30 May 2017 11:04:21 +0000</pubdate>
+<source>techcrunch_android</source>
+</item>
+<item status='active' id='17'>
+<img_link dominantColor="62.5713222128,72.3511808501,49.8947102064" textColor="white">../res/images/techcrunch_android_screen-shot-2017-05-25-at-8-40-16-am.png</img_link>
+<desc>Researchers from Georgia Institute of Technology have released a full report on a new attack vector that affects Android up to version 7.1.2. The exploit, called Cloak &amp;#38; Dagger, uses Android&amp;#8217;s design and screen behaviors against users, effectively hiding activity behind various app-generated interface elements that lets a hacker grab screen interactions and hide activity behind&amp;hellip; </desc>
+<title>Cloak &amp; Dagger is a newly-discovered Android exploit that lets hackers hide malicious activity</title>
+<link>http://feedproxy.google.com/~r/techcrunch/android/~3/8q63UEt0rM4/</link>
+<pubdate>Thu, 25 May 2017 12:47:12 +0000</pubdate>
+<source>techcrunch_android</source>
+</item>
+<item status='active' id='18'>
+<img_link dominantColor="126.96250029,147.922845047,161.964765567" textColor="black">../res/images/techcrunch_android_p1050244.jpg</img_link>
+<desc>The global smartphone market grew 9.1 per cent in the first quarter of this year, according to Gartner&amp;#8217;s latest stats, and growth is being driven by a trio of Chinese device makers. </desc>
+<title>Chinese trio carve up a quarter of global smartphone sales in Q1: Gartner</title>
+<link>http://feedproxy.google.com/~r/techcrunch/android/~3/grVv8OTMin0/</link>
+<pubdate>Tue, 23 May 2017 09:14:59 +0000</pubdate>
+<source>techcrunch_android</source>
+</item>
+<item status='active' id='19'>
+<img_link dominantColor="115.396332796,116.955346021,130.802822758" textColor="white">../res/images/techcrunch_android_sync-sync3_android-auto.jpg</img_link>
+<desc>Ford is updating a large number of 2016 model year cars equipped with SYNC 3 infotainment software, adding Android Auto and CarPlay to the vehicles with a free, over-the-air update via Wi-Fi, or using either USB or going through their dealer. The upgrade will be available for around 800,000 vehicles in total, giving a huge number of Ford car owners the chance to get big infotainment&amp;hellip; </desc>
+<title>Ford to add Android Auto and CarPlay to 2016 Ford SYNC 3 cars via update</title>
+<link>http://feedproxy.google.com/~r/techcrunch/android/~3/gmXoEVMDJak/</link>
+<pubdate>Fri, 19 May 2017 12:30:47 +0000</pubdate>
+<source>techcrunch_android</source>
+</item>
+<item status='active' id='20'>
+<img_link dominantColor="97.5854414062,91.9158489583,95.8287430556" textColor="white">../res/generic/1.jpg</img_link>
+<desc>Having a neural network locally on your mobile device could be hugely beneficial, and it may be possible thanks to research from a team at MIT.</desc>
+<title>MIT Research Could Make Neural Networks Portable</title>
+<link>https://www.extremetech.com/extreme/252689-mit-research-make-neural-networks-portable</link>
+<pubdate>Wed, 19 Jul 2017 11:30:48 +0000</pubdate>
+<source>extremetech</source>
+</item>
+<item status='active' id='21'>
+<img_link dominantColor="214.264634115,213.722634115,212.928871094" textColor="black">../res/generic/5.jpg</img_link>
+<desc>AMD's new Ryzen CPU is popular, but that's got a downside -- scammers are showing up online to bilk people out of their cash by relabeling cheap Celerons as AMD processors. </desc>
+<title>Fake Ryzen Chips Now Popping Up on Amazon, eBay</title>
+<link>https://www.extremetech.com/computing/252674-fake-ryzen-chips-now-popping-amazon-ebay</link>
+<pubdate>Tue, 18 Jul 2017 20:01:55 +0000</pubdate>
+<source>extremetech</source>
+</item>
+<item status='active' id='22'>
+<img_link dominantColor="23.3164689429,24.7761429398,30.264142554" textColor="white">../res/generic/2.jpg</img_link>
+<desc>The satellite itself is a standard cubesat around the size of a loaf of bread, but it's going to deploy a solar reflector that could make it one of the brightest objects in the sky. </desc>
+<title>Russian Satellite Could Soon Be the Brightest &#8216;Star&#8217; in the Night Sky</title>
+<link>https://www.extremetech.com/extreme/252657-russian-satellite-soon-brightest-star-night-sky</link>
+<pubdate>Tue, 18 Jul 2017 18:30:17 +0000</pubdate>
+<source>extremetech</source>
+</item>
+<item status='active' id='23'>
+<img_link dominantColor="205.411634819,204.198722885,204.280400663" textColor="black">../res/images/extremetech_Lenovo-Y700.jpg</img_link>
+<desc>On the lookout for an affordable gaming laptop? Today's deal from Lenovo has the 14-inch Y700 selling at a 25% discount. With a decent dedicated video card, a quad-core CPU, and a solid-state drive, there's a lot to like about this budget gaming set-up. </desc>
+<title>ET Deals: Lenovo Y700 Quad-Core 1080p Gaming Laptop for Just $600</title>
+<link>https://www.extremetech.com/deals/252583-et-deals-lenovo-y700-quad-core-gaming-laptop</link>
+<pubdate>Tue, 18 Jul 2017 18:00:49 +0000</pubdate>
+<source>extremetech</source>
+</item>
+<item status='active' id='24'>
+<img_link dominantColor="33.5705792341,34.9515035377,30.9983163666" textColor="white">../res/images/extremetech_electrons.jpg</img_link>
+<desc>There is no sound in space, at least not the kind of sound we as humans can detect. There is, however, something akin to sound if you have the right tools to listen to it.</desc>
+<title>NASA Reveals Eerie Whistling Electron Waves from Space</title>
+<link>https://www.extremetech.com/extreme/252589-nasa-reveals-eerie-whistling-electron-waves-space</link>
+<pubdate>Tue, 18 Jul 2017 17:01:53 +0000</pubdate>
+<source>extremetech</source>
+</item>
+<item status='active' id='25'>
+<img_link dominantColor="135.365645829,152.469600197,168.989983897" textColor="black">../res/images/extremetech_FormE_8-_X0W9773.jpg</img_link>
+<desc>The first NYC auto race unfolded quietly in Brooklyn, but not as quietly as you'd expect for electric cars. Curious? Here's everything you need to know about Formula E.</desc>
+<title>Why Formula E Is the Auto Racing Series of the Future</title>
+<link>https://www.extremetech.com/extreme/252530-formula-e-auto-racing-series-future</link>
+<pubdate>Tue, 18 Jul 2017 15:47:53 +0000</pubdate>
+<source>extremetech</source>
+</item>
+<item status='active' id='26'>
+<img_link dominantColor="80.2761830558,67.3273207868,69.9558625337" textColor="white">../res/images/extremetech_Ryzen2-Feature.jpg</img_link>
+<desc>AMD's new AGESA 1.0.0.6 update has shipped out to motherboard manufacturers and there look to be a fair number of performance improvements and additional memory timing options now available for adjustment. </desc>
+<title>Latest AMD Ryzen BIOS Updates Really Boost Game Performance</title>
+<link>https://www.extremetech.com/computing/252576-latest-round-ryzen-bios-updates-improves-performance-adds-features</link>
+<pubdate>Tue, 18 Jul 2017 14:02:59 +0000</pubdate>
+<source>extremetech</source>
+</item>
+<item status='active' id='27'>
+<img_link dominantColor="179.440999891,161.750857747,139.613696832" textColor="black">../res/generic/3.jpg</img_link>
+<desc>Life became too painful for one of a handful of Knightscope K5 security robots today. It tragically took its own life in a DC water fountain, possibly thwarted from rescuing itself by its inability to navigate stairs or lift its own body. </desc>
+<title>Security Robot Takes Its Own Life in DC Fountain Tragedy</title>
+<link>https://www.extremetech.com/electronics/252600-security-robot-takes-life-dc-fountain-tragedy</link>
+<pubdate>Tue, 18 Jul 2017 12:48:12 +0000</pubdate>
+<source>extremetech</source>
+</item>
+<item status='active' id='28'>
+<img_link dominantColor="106.488522414,87.8945568204,102.744271234" textColor="white">../res/images/extremetech_Intel-Avoton.jpg</img_link>
+<desc>New rumors indicate Intel will respond to AMD in the consumer space, possibly with new Core i7 and i5 offerings that add six-core CPUs to Intel's desktop lines.</desc>
+<title>Intel May Respond to AMD Ryzen With Six-Core i5, i7 CPUs</title>
+<link>https://www.extremetech.com/computing/252595-intel-may-respond-ryzen-six-core-i5-i7-desktop-processors</link>
+<pubdate>Tue, 18 Jul 2017 11:30:47 +0000</pubdate>
+<source>extremetech</source>
+</item>
+<item status='active' id='29'>
+<img_link dominantColor="52.5222013889,103.527256944,124.31783724" textColor="white">../res/generic/4.jpg</img_link>
+<desc>Atari has unveiled the first photos of the Ataribox, a system supposedly designed for and capable of playing both classic and current games.</desc>
+<title>Atari&#8217;s New Ataribox Will Play Classic and Current Games</title>
+<link>https://www.extremetech.com/gaming/252567-ataris-new-ataribox-will-play-classic-current-games</link>
+<pubdate>Mon, 17 Jul 2017 19:32:32 +0000</pubdate>
+<source>extremetech</source>
+</item>
+</root>
